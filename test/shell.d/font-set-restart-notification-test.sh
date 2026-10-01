@@ -97,7 +97,8 @@ hint_value() { # key
   return 1
 }
 
-glyph=$'\ue659'
+# U+E659 as UTF-8 bytes: $'\ue659' stays a literal "\ue659" outside a UTF-8 locale.
+glyph=$'\xee\x99\x99'
 
 # --------------------------------------------------------------- Foot running
 run_scenario 'foot'
